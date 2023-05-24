@@ -1,9 +1,12 @@
 import os
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
+from langchain.agents import load_tools
+from langchain.agents import initialize_agent
 
 # temperature - randomness in the output
 llm = OpenAI(temperature=0.9)
+tools = load_tools(["serpapi", "llm-math"], llm=llm)
 
 # basic query example
 def basic_query():
@@ -19,6 +22,12 @@ def basic_prompt():
 
     print(llm(prompt.format(city="bangalore")))
 
+def basic_agent():
+    agent = initialize_agent(tools, llm, "zero-shot-react-description", verbose=True)
+    agent.run("Who won the ipl match played on may24 2023")
+
+
 
 basic_query()
 basic_prompt()
+basic_agent()

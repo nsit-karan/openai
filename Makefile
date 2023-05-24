@@ -2,5 +2,5 @@ python-config:
 	pip3 install langchain
 	pip3 install openai
 
-run-basics: python-config
+run-basics:
 	python3 src/basic_langchain.py
