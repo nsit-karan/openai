@@ -7,7 +7,7 @@ from langchain import ConversationChain
 
 # temperature - randomness in the output
 llm = OpenAI(temperature=0.9)
-tools = load_tools(["serpapi", "llm-math"], llm=llm)
+tools = load_tools(["serpapi", "llm-math", "wolfram-alpha"], llm=llm)
 
 # basic query example
 def basic_query():
@@ -34,8 +34,13 @@ def conversation_agent():
     conversation.predict(input="can you suggest relevant free lectures that i can follow")
     conversation.predict(input="thanks. thats all i have for today")
 
+def wolfram_alpha_query():
+    tools = load_tools(["wolfram-alpha"])
+    agent = initialize_agent(tools, llm, "zero-shot-react-description", verbose=True)
+    agent.run("what is asthenosphere")
 
-basic_query()
-basic_prompt()
-basic_agent()
-conversation_agent()
+#basic_query()
+#basic_prompt()
+#basic_agent()
+#conversation_agent()
+wolfram_alpha_query()
