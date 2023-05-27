@@ -4,8 +4,12 @@
 
 ## Good reference materials to follow
 
+* start with <https://www.youtube.com/watch?v=5MaWmXwxFNQ> - best explanation
+  of what embeddings is and the overall feel of what openai and langchain
+  integration intuitively is trying to do
 * langchain by harrison (founder) - look for recordings, videos by him
-* go for <https://www.youtube.com/watch?v=EnT-ZTrcPrg> and other videos in this channel and try along
+* go for <https://www.youtube.com/watch?v=EnT-ZTrcPrg> and other videos in this
+  channel and try along
 
 ## pre-requisites
 
