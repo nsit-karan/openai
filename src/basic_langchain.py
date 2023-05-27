@@ -20,7 +20,6 @@ def basic_prompt():
     prompt = PromptTemplate(
         input_variables=['city'],
         template="what is the weather like in {city}")
-
     print(llm(prompt.format(city="bangalore")))
 
 def basic_agent():
