@@ -17,6 +17,10 @@
 * go for <https://www.youtube.com/watch?v=EnT-ZTrcPrg> and other videos in this
   channel and try along
 
+### summaries
+* chain_type = stuff (consolidate stuff)
+* chain_type = map_reduce (multiple smaller docs -> summarized into a single simple summary)
+
 ### embeddings
 
 * start with <https://www.youtube.com/watch?v=5MaWmXwxFNQ> - best explanation
