@@ -52,6 +52,6 @@ pip install pinecone-client
 ```bash
 export OPENAI_API_KEY="api-key"
 export WOLFRAMA_ALPHA_APPID="app-api-key"
-export PINECONE_API_KEY=<pinecone_api_key"
-export PINECONE_API_ENV=:<location>"
+export PINECONE_API_KEY="pinecone_api_key"
+export PINECONE_API_ENV="<location>"
 ```
